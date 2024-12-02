@@ -1,0 +1,318 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.logo-container {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.logo {
+    width: 70px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.menus{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    color: white;
+}
+.menuTopo{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+.menu li a {
+    color: #ff3200;
+}
+
+.menu a{
+    text-decoration: none;
+}
+.foto{
+    background-image: url("../imagens/imgg-od3-o441dz7s.png");
+    width:1500px;
+    height: 857px;
+    background-repeat:no-repeat;
+}
+h1{
+    position: relative;
+    top: 50px;
+    text-align: center;
+    font-size: 50px;
+}
+.produtos{
+    background-color: white;
+    width:1500px;
+    height: 857px;
+}
+
+.produtos h2{
+    text-align: center;
+}
+
+.texto{
+    color: #ff3200;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+}
+.image-item {
+    width: 400px;
+
+}
+.image-item img {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+.image-item span {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ff3200;
+}
+.image-section img {
+    width: 500px;
+    height: auto;
+}
+
+.text-section {
+    margin-left: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text-section p {
+    color: #ff3200;
+    font-size: 16px;
+}
+.text-section h1 {
+    color: #ff3200;
+    font-size: 50px;
+
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+button {
+    font-size: 18px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 200ms;
+    transition-property: color;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    padding: 15px;
+    gap: 50px;
+}
+
+.socialContainer {
+    width: 600px;
+    height: 600px;
+    background-color: rgb(65, 29, 131);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    border-radius: 30px;
+}
+
+/* instagram */
+.containerOne:hover {
+    background-color: #d62976;
+    transform: scale(1.2);
+}
+
+/* twitter */
+.containerTwo:hover {
+    background-color: #00acee;
+    transform: scale(1.2);
+}
+
+/* linkedin */
+.containerThree:hover {
+    background-color: #0072b1;
+    transform: scale(1.2);
+}
+
+/* whatsapp */
+.containerFour:hover {
+    background-color: #31CD36;
+    transform: scale(1.2);
+}
+
+.socialContainer:active {
+    transform: scale(0.9);
+}
+
+.socialSvg {
+    width: 17px;
+}
+
+.socialSvg path {
+    fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+h2{
+    text-align: center;
+    color: #ff3200;
+    top: 50px;
+    font-size: 50px;
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Separação horizontal */
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.footer-item {
+    flex: 1; /* Espaçamento igual entre os itens */
+    text-align: left;
+    margin: 0 51px; /* Espaçamento horizontal entre os itens */
+    padding-left: 20px;
+}
+
+.footer-item:first-child {
+    border-left: none; /* Remove linha no primeiro item */
+    padding-left: 0;
+}
+
+.footer-item h2,
+.footer-item h3 {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.footer-item p {
+    margin: 5px 0;
+}
+
+.footer-item a {
+    color: #ff4500; /* Laranja para destacar o link */
+    text-decoration: none;
+}
+
+.footer-item a:hover {
+    text-decoration: underline;
+}
+/* Estilo do menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Espaçamento entre itens */
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    text-decoration: none; /* Remove sublinhado padrão */
+    color: #ff3200; /* Ajuste conforme necessário */
+    font-size: 18px; /* Tamanho da fonte */
+    position: relative; /* Necessário para o efeito */
+
+}
+
+/* Efeito de sublinhado no hover */
+.menu a::after {
+    content: ''; /* Cria a linha */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Ajuste a posição conforme necessário */
+    width: 0;
+    height: 2px; /* Espessura da linha */
+    background: #ff3200; /* Cor do sublinhado */
+    transition: width 0.3s ease; /* Animação */
+}
+
+.menu a:hover::after {
+    width: 100%; /* Sublinhado preenche o link */
+}
+.produto1{
+    background-color: #79aae3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 900px;
+    padding: 10px;
+}
+.Produto{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}
